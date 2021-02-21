@@ -1,0 +1,15 @@
+{
+  "name": "chrome-extension-typescript-minimum-starter",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/"],
+      "js": ["content_scripts.js"]
+    }
+  ],
+  "permissions": ["storage"]
+}
